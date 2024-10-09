@@ -40,7 +40,7 @@
                     </div>                     
                     <div class="h-100 d-inline-flex align-items-center me-4">
                         <small class="far fa-envelope-open me-2"></small>
-                        <small><a href="mailto:averinsservices@gmail.com" class="text-white">averinsservices@gmail.com</a></small>
+                        <small><a href="mailto:info@averinsservices.com" class="text-white">info@averinsservices.com</a></small>
                     </div>                     
                 </div>                 
                 <div class="col-lg-5 px-5 text-end"> 
@@ -134,7 +134,7 @@ Always here to help.</p>
                                         <div class="align-items-center d-flex">
                                             <div class="btn-lg-square bg-primary rounded-circle me-3"> <i class="fa fa-envelope text-white"></i> 
                                             </div>                                             
-                                            <h6 class="mb-0">averinsservices@gmail.com</h6> 
+                                            <h6 class="mb-0">info@averinsservices.com</h6> 
                                         </div>
                                     </div>                                     
                                 </div>                                 
@@ -307,39 +307,41 @@ Always here to help.</p>
                         <div class="h-100 px-4 px-sm-5 pe-lg-0 wow fadeIn" data-wow-delay="0.5s"> 
                             <div class="bg-white p-4 p-sm-5"> 
                                 <div class="row g-3"> 
-                                    <div class="col-sm-6"> 
-                                        <div class="form-floating"> 
-                                            <input type="text" class="form-control" id="gname" placeholder="Gurdian Name"> 
-                                            <label for="gname">Your Name</label>                                             
+                                    <form id="contact-form" onsubmit="sendEmail(event);" class="row g-3">
+                                        <div class="col-sm-6"> 
+                                            <div class="form-floating"> 
+                                                <input type="text" class="form-control" id="gname" placeholder="Your Name" required> 
+                                                <label for="gname">Your Name</label>                                                 
+                                            </div>                                             
                                         </div>                                         
-                                    </div>                                     
-                                    <div class="col-sm-6"> 
-                                        <div class="form-floating"> 
-                                            <input type="email" class="form-control" id="gmail" placeholder="Gurdian Email"> 
-                                            <label for="gmail">Your Email</label>                                             
+                                        <div class="col-sm-6"> 
+                                            <div class="form-floating"> 
+                                                <input type="email" class="form-control" id="gmail" placeholder="Your Email" required> 
+                                                <label for="gmail">Your Email</label>                                                 
+                                            </div>                                             
                                         </div>                                         
-                                    </div>                                     
-                                    <div class="col-sm-6"> 
-                                        <div class="form-floating"> 
-                                            <input type="text" class="form-control" id="cname" placeholder="Child Name"> 
-                                            <label for="cname">Your Mobile</label>                                             
+                                        <div class="col-sm-6"> 
+                                            <div class="form-floating"> 
+                                                <input type="text" class="form-control" id="cname" placeholder="Your Mobile" required> 
+                                                <label for="cname">Your Mobile</label>                                                 
+                                            </div>                                             
                                         </div>                                         
-                                    </div>                                     
-                                    <div class="col-sm-6"> 
-                                        <div class="form-floating"> 
-                                            <input type="text" class="form-control" id="cage" placeholder="Child Age"> 
-                                            <label for="cage">Service Type</label>                                             
+                                        <div class="col-sm-6"> 
+                                            <div class="form-floating"> 
+                                                <input type="text" class="form-control" id="cage" placeholder="Service Type" required> 
+                                                <label for="cage">Service Type</label>                                                 
+                                            </div>                                             
                                         </div>                                         
-                                    </div>                                     
-                                    <div class="col-12"> 
-                                        <div class="form-floating"> 
-                                            <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 80px"></textarea> 
-                                            <label for="message">Message</label>                                             
+                                        <div class="col-12"> 
+                                            <div class="form-floating"> 
+                                                <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 80px" required></textarea> 
+                                                <label for="message">Message</label>                                                 
+                                            </div>                                             
                                         </div>                                         
-                                    </div>                                     
-                                    <div class="col-12"> 
-                                        <button class="btn btn-primary py-3 px-5" type="submit">Get A Free Quote</button>                                         
-                                    </div>                                     
+                                        <div class="col-12"> 
+                                            <button class="btn btn-primary py-3 px-5" type="submit">Send</button>                                             
+                                        </div>                                         
+                                    </form>
                                 </div>                                 
                             </div>                             
                         </div>                         
@@ -462,7 +464,7 @@ Always here to help.</p>
                         <h5 class="text-light mb-4">Get In Touch</h5> 
                         <p><i class="fa fa-map-marker-alt me-3"></i>6030 N Kenmore Ave, Chicago, IL 60660</p> 
                         <p><i class="fa fa-phone-alt me-3"></i><a href="tel:(224)444-9009">(224) 444-9009</a></p>
-                        <p><i class="fa fa-envelope me-3"></i><a href="mailto:averinsservices@gmail.com">averinsservices@gmail.com</a></p>
+                        <p><i class="fa fa-envelope me-3"></i><a href="mailto:info@averinsservices.com">info@averinsservices.com</a></p>
                     </div>                     
                     <div class="col-lg-3 col-md-6"> 
                         <h5 class="text-light mb-4">Follow Us</h5> 
@@ -474,7 +476,7 @@ Always here to help.</p>
             <div class="container-fluid copyright"> 
                 <div class="container"> 
                     <div class="row"> 
-                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">&copy; <a href="#">Averins Services LLC</a>, All Right Reserved.&nbsp;
+                        <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">&copy; <a href="#">Averins Services LLC</a>, All Rights Reserved.&nbsp;
                             <p>Website Сrafted by <a href="https://cj3dreams.t.me/">cj3dreams</a></p>
                         </div>                         
                     </div>                     
@@ -493,6 +495,8 @@ Always here to help.</p>
         <script src="lib/counterup/counterup.min.js"></script>         
         <script src="lib/parallax/parallax.min.js"></script>         
         <!-- Template Javascript -->         
+        <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+        <script src="js/internalPointerVariable.js"></script>         
         <script src="js/main.js"></script>         
     </body>     
 </html>
