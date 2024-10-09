@@ -1,6 +1,6 @@
 
 (function() {
-    internalPointerVariable.init("oUgxoMSUaGgCIptWT"); 
+    emailjs.init("oUgxoMSUaGgCIptWT"); 
 })();
 
 function sendEmail(event) {
