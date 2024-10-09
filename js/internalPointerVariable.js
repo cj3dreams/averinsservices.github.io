@@ -22,6 +22,6 @@ function sendEmail(event) {
     .then(function(response) {
         alert("Message sent successfully!");
     }, function(error) {
-        alert("Failed to send message: " + error); 
+        alert("Failed to send message: " + + JSON.stringify(error)); 
     });
 }
