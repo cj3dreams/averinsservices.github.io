@@ -1,27 +1,34 @@
-
 (function() {
-    emailjs.init("oUgxoMSUaGgCIptWT"); 
+    emailjs.init("oUgxoMSUaGgCIptWT");  
 })();
 
 function sendEmail(event) {
     event.preventDefault();
-    
-    let name = document.getElementById("gname").value;
-    let email = document.getElementById("gmail").value;
-    let mobile = document.getElementById("cname").value;
-    let serviceType = document.getElementById("cage").value;
-    let message = document.getElementById("message").value;
 
-    emailjs.send("service_qystbp5", "template_fkq1r19", { ///"Don't even touch it bitch"
-        name: name,
+
+    const fromName = document.getElementById("gname").value;
+    const email = document.getElementById("gmail").value;
+    const mobile = document.getElementById("cname").value;
+    const service = document.getElementById("cage").value;
+    const message = document.getElementById("message").value;
+
+    if (!fromName || !email || !mobile || !service || !message) {
+        alert("Please fill in all the fields.");
+        return;
+    }
+
+    const templateParams = {
+        name: fromName,
         email: email,
         mobile: mobile,
-        serviceType: serviceType,
-        message: message
-    })
+        serviceType: service,
+        message: message,
+    };
+
+    emailjs.send("service_qystbp5", "template_fkq1r19", templateParams)
     .then(function(response) {
         alert("Message sent successfully!");
     }, function(error) {
-        alert("Failed to send message: " + + JSON.stringify(error)); 
+        alert("Failed to send message: " + JSON.stringify(error));
     });
 }
